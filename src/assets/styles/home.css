@@ -1,0 +1,17 @@
+.home {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.top-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.content-section {
+  background-color: gray;
+  height: auto;
+  width: 40%;
+  padding: 40px;
+}
