@@ -1,19 +1,9 @@
 import React, { useState, useEffect } from "react";
 import "../assets/styles/menu.css";
 
+import { appMenu, adminMenu } from "./static/menuList";
+
 const Menu = ({ appMode }) => {
-  const appMenu = [
-    { id: 1, link: "Entry1" },
-    { id: 2, link: "Entry2" },
-    { id: 3, link: "Entry3" },
-    { id: 4, link: "Entry4" },
-    { id: 5, link: "Entry5" },
-  ];
-  const adminMenu = [
-    { id: 1, link: "AdminEntry1" },
-    { id: 2, link: "AdminEntry2" },
-    { id: 3, link: "AdminEntry3" },
-  ];
   const [menuItems, setMenuItems] = useState([]);
   const [selected, setSelected] = useState(0);
 
@@ -25,7 +15,7 @@ const Menu = ({ appMode }) => {
     }
   });
   return (
-    <div>
+    <React.Fragment>
       {menuItems.map((menu) => (
         <div
           onClick={() => setSelected(menu.id)}
@@ -35,7 +25,7 @@ const Menu = ({ appMode }) => {
           <p>{menu.link}</p>
         </div>
       ))}
-    </div>
+    </React.Fragment>
   );
 };
 
