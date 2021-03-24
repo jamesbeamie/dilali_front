@@ -1,5 +1,6 @@
 # Setting up
 - clone the project
+- run `git checkout develop` to checkout to branch `develop`
 - run `npm install` to install dependencies
 # running the application
 - run `npm start` to start the application.
