@@ -9,8 +9,14 @@
   justify-content: space-between;
 }
 
+.app-content-section {
+  background-color: #bfbfbf;
+  height: auto;
+  width: 40%;
+  padding: 40px;
+}
 .content-section {
-  background-color: gray;
+  background-color: #e6e6e6;
   height: auto;
   width: 40%;
   padding: 40px;
