@@ -20,11 +20,10 @@ const Menu = ({ appMode }) => {
   useEffect(() => {
     if (appMode == "admin") {
       setMenuItems(adminMenu);
-    } else if (appMode == "app") {
+    } else {
       setMenuItems(appMenu);
     }
   });
-  console.log("selected", selected);
   return (
     <div>
       {menuItems.map((menu) => (
