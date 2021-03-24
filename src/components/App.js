@@ -9,6 +9,7 @@ const App = () => {
     const { value } = e.target;
     setMode(value);
   };
+
   return (
     <div className='home'>
       <div className='top-section'>
